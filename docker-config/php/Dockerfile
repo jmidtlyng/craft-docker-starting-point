@@ -27,7 +27,7 @@ RUN echo "upload_max_filesize = 10M" > /usr/local/etc/php/php.ini && \
     echo "max_execution_time = 300" >> /usr/local/etc/php/php.ini && \
     echo "memory_limit = 256M" >> /usr/local/etc/php/php.ini
 
-COPY --chown=www-data:www-data ./src /var/www/html
+COPY --chown=www-data:www-data ./qpr /var/www/html
 
 RUN composer install -d /var/www/html/ && \
     chown -R www-data:www-data /var/www/html/vendor && \
