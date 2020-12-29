@@ -21,16 +21,16 @@ services:
         ENVIRONMENT: dev
         DB_DRIVER: mysql
         DB_SERVER: database
-        DB_USER: root
-        DB_PASSWORD: secret
-        DB_DATABASE: pre_flight
+        DB_USER: waf
+        DB_PASSWORD: project
+        DB_DATABASE: project
         DB_SCHEMA: public
         DB_TABLE_PREFIX: craft_
         SITE_URL: http://localhost
         SECURITY_KEY: AAAAAAAAAAAAAAAAAAAAAAAAAAA
         PP_SANDBOX_ID: ATVGt7AcJz-Ls490o85jIRmxmqTKXtAdeEtEI9oAaUP3Om2LDqh3kMc-7bT7n5RBh6NgqPwDygwShByn
         PP_SANDBOX_SECRET: EBXi16OqruSr95BrwwPolLHoYogT4dWZgrLloSfIvdJT7PcROh5GYEl8-FyUeWOUB3oCIsR2KBmTGxD4
-        SUPPORT_EMAIL: minohsuh@gmail.com
+        SUPPORT_EMAIL: jacobmidtlyng@gmail.com
 
   database:
       image: mariadb:10.3
